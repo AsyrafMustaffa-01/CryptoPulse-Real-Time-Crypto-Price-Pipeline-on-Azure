@@ -10,7 +10,7 @@ app = func.FunctionApp()
 
 # 🔐 Replace this with your actual connection string
 BLOB_CONNECTION_STRING = os.environ["BLOB_CONNECTION_STRING"]
-CONTAINER_NAME = "cryptoprices"
+CONTAINER_NAME = "crypto-pulse-con"
 
 @app.schedule(schedule="* * * * *", arg_name="myTimer", run_on_startup=False, use_monitor=True)
 def fetch_top_10_cryptos(myTimer: func.TimerRequest) -> None:
