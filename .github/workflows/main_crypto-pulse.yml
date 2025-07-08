@@ -76,5 +76,5 @@ jobs:
         id: deploy-to-function
         with:
           app-name: 'crypto-pulse'
-          slot-name: 'Production'
+          slot-name: 'crypto-pulse-development'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
